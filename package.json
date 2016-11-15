@@ -1,0 +1,14 @@
+{
+  "name": "gitu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    
+  },
+  "author": "Satenik",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

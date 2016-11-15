@@ -1,0 +1,54 @@
+html, body{
+	font-family: "Calisto MT","Bookman Old Style",Bookman,"Goudy Old Style",Garamond,"Hoefler Text","Bitstream Charter",Georgia,serif;
+}
+md-toolbar:not(.md-menu-toolbar){
+    background-color:#FF5722;
+    position: absolute;
+    color:#fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+md-toolbar > a > img{
+    height:100px;
+}
+.md-button.md-raised{
+	padding:10px;
+	font-size:18px;
+}
+.md-button.md-primary.md-raised{
+	background-color:#424242;
+}
+.md-button.md-primary.md-raised:not([disabled]):hover, .md-button.md-primary.md-raised:focus {
+	background-color:#FF5722;
+}
+.md-button.md-raised > .fa{
+	font-size:50px;
+	display:block;
+}
+md-tabs md-ink-bar{
+	background:#424242;
+}
+md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon{
+	color:#FF5722;
+}	
+.content{
+	color:rgba(0,0,0,0.54); 
+	font-size:25px;
+	line-height:50px;
+}
+@media screen and (max-width: 756px){
+	.md-button.md-raised{
+		width:300px;
+		font-size:12px;
+	}
+	md-toolbar > h1{
+		font-size:30px;
+	}
+	.md-button.md-raised > .fa{
+		font-size:35px;
+	}
+}
+@media screen and (max-width: 400px){
+	.md-button.md-raised{
+		width:100%;
+	}
+}
