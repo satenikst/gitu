@@ -33,7 +33,43 @@
       <md-tab label="git config">
         <md-content class="md-padding">
           <h1 class="md-display-2">git config</h1>
-          <p class="content">The git config command lets you configure your Git installation (or an individual repository) from the command line. This command can define everything from user info to preferences to the behavior of a repository. Several common configuration options are listed below.</p>
+          <p class="content">
+            git config հրամանը քեզ թույլ է տալիս ձևակերպել Git-ի տեղակայումը (installation) command line-ից։
+          </p>
+          <div class="quest">կիրառում</div>
+          <div class="usage">
+            git config user.name <.name.>
+          </div>
+          <p class="content">
+            Սահմանվում է հեղինակի անունը, որը կօգտագործվի տվյալ շտեմարանում բոլոր փոփոխությունների համար։ Նաև պետք է օգտագործել --global-ը տվյալ օգտագործողի համար փոփոխությունների կարգավորումներ կատարելու դեպքում։
+          </p>
+          <div class="usage">
+            git config --global user.name <․name․>
+          </div>
+          <p class="content">
+            Սահմանվում է հեղինակի էլեկտրոնային փոստի հասցեն, որպեսզի բոլոր փոփոխությունները կատարվեն ճիշտ օգտագործողի կողմից։
+          </p>
+          <div class="usage">
+            git config --global user.email <․email․>
+          </div>
+          <p class="content">
+            Git հրամանի համար ստեղծվում է shortcut
+          </p>
+          <div class="usage">
+            git config --global alias.<.alias-name.> <.git-command.>
+          </div>
+          <p class="content">
+            Սահմանում է տեքստային խմբագրիչ (text editor)։ <․editor․>-ը հրաման է, որը գործարկում է (run) քեզ անհրաժեշտ խմբագրիչը։
+          </p>
+          <div class="usage">
+            git config --system core.editor <․editor․>
+          </div>
+          <p class="content">
+            Խմբագրիչի մեջ բացում է գլոբալ կարգավորումների ֆայլը, արդեն իսկ խմբագրելու համար։
+          </p>
+          <div class="usage">
+            git config --global --edit
+          </div>
         </md-content>
       </md-tab>
     </md-tabs>
