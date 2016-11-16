@@ -1,5 +1,5 @@
 html, body{
-	font-family: "Calisto MT","Bookman Old Style",Bookman,"Goudy Old Style",Garamond,"Hoefler Text","Bitstream Charter",Georgia,serif;
+	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
 }
 md-toolbar:not(.md-menu-toolbar){
     background-color:#FF5722;
@@ -32,7 +32,7 @@ md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.m
 }	
 .content{
 	color:rgba(0,0,0,0.54); 
-	font-size:25px;
+	font-size:22px;
 	line-height:50px;
 }
 .quest{
