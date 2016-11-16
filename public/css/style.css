@@ -41,12 +41,11 @@ md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.m
 	padding:10px;
 }
 .usage{
-	height:50px;
-	width:200px;
+	padding:10px;
+	width:400px;
 	border:1px solid #FF5722;
 	border-radius:5px;
-	line-height:50px;
-	text-align:center;
+	line-height:40px;
 }
 @media screen and (max-width: 756px){
 	.md-button.md-raised{
@@ -62,6 +61,13 @@ md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.m
 }
 @media screen and (max-width: 400px){
 	.md-button.md-raised{
+		width:100%;
+	}
+	.content{
+		line-height:30px;
+		font-size:18px;
+	}
+	.usage{
 		width:100%;
 	}
 }
