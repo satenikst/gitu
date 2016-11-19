@@ -1,0 +1,42 @@
+<div ng-cloak style="padding-top:110px;">
+<h2 style="text-align:center;color:rgba(0,0,0,0.54);">ԱՆՑԱԾ ՓՈՓՈԽՈՒԹՅՈՒՆՆԵՐԻ ԴԻՏՈՒՄ</h2>
+  <md-content>
+    <md-tabs md-dynamic-height>
+      <md-tab label="git checkout">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">git checkout</h1>
+          <p class="content">
+          git checkout հրամանը կատարում է հետևյալ գործողությունները՝
+          </p>
+            <ol class="content">
+              <li>ստուգում է ֆայլերը,</li>
+              <li>ստուգում է commit-ները,</li>
+              <li>ստուգում է ճյուղերը</li>
+            </ol>
+          <p class="content">
+            Այս մոդուլում մենք գործ կունենանք միայն առաջին երկուսի հետ։ Ստուգելով commit-ը ամբողջ աշխատանքային ցուցակը համապատասխանեցվում է այդ commit-ին։ Սա կարող է օգտագործվել քո նախագծի հին վիճակը տեսնելու համար, չփոխելով ընթացիկ վիճակը։ Ֆայլը ստուգելով դու կարող ես տեսնել ֆայլի հին տարբերակը, նույնպես առանց ընթացիկ վիճակի փոփոխության։
+          </p>
+          <div class="quest">կիրառում</div>
+          <div class="usage">
+            git checkout master
+          </div>
+          <p class="content">
+            Սա վերադարձնում է master ճյուղը։
+          </p>
+          <div class="usage">
+            git checkout 'commit' 'file'
+          </div>
+          <p class="content">
+            Սա ստուգում է ֆայլի նախկին տարբերակը։
+          </p>
+          <div class="usage">
+            git checkout 'commit'
+          </div>
+          <p class="content">
+            Սա թարմացնում է աշխատանքային ցուցակի բոլոր ֆայլերը՝ տվյալ commit-ին համապատասխան։
+          </p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>
