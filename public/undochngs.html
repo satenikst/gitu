@@ -65,32 +65,32 @@
           <p class="content">
             Սա ջնջում է տվյալ ֆայլը նախագծից, բայց աշխատանքային միջավայրը թողնում է անփոփոխ։
           </p>
-          <div class="usage">
-            git log -n 'limit'
-          </div>
-          <p class="content">
-            Սահմանափակում է commit-ների քանակը ըստ՝ 'limit'-ի։
-          </p>
         </md-content>
       </md-tab>
       <md-tab label="git clean">
         <md-content class="md-padding">
           <h1 class="md-display-2">git clean</h1>
           <p class="content">
-            git log հրամանը ցուցադրում է տեղի ունեցած բոլոր commit-ները։ Դա քեզ թույլ է տալիս թերթել նախագծի պատմության էջերը, զտել (filter) այն, և փնտրել հատուկ փոփոխություններ։
+            git clean հրամանը ջնջում է չուղեկցվող (untracked) ֆայլերը քո աշխատանքային միջավայրից։ rm հրամանի պես, git clean հրամանը կատարելու հետո ջնջված ֆայլերը այլևս հնարավոր չէ վերականգնել։ Այսպիսով՝ ջնջելուց առաջ վստահ եղիր, որ այդ ֆայլերը քեզ իսկապես անհրաժեշտ չեն։
           </p>
           <div class="quest">կիրառում</div>
           <div class="usage">
-            git log
+            git clean -n
           </div>
           <p class="content">
-            Սրանով ցուցադրվում է գոյություն ունեցող commit-ների պատմությունը։
+            Սա ցույց է տալիս, թե ինչպիսի չուղեկցվող ֆայլեր կան։
           </p>
           <div class="usage">
-            git log -n 'limit'
+            git clean -f
           </div>
           <p class="content">
-            Սահմանափակում է commit-ների քանակը ըստ՝ 'limit'-ի։
+            Սա ջնջում է չուղեկցվող ֆայլերը տվյալ ցուցակից։
+          </p>
+          <div class="usage">
+            git clean -f 'path'
+          </div>
+          <p class="content">
+            Սա սահմանափակում է ջնջվող ֆայլերի քանակը ըստ 'path'-ի։
           </p>
         </md-content>
       </md-tab>
