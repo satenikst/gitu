@@ -11,6 +11,7 @@ md-toolbar > a > img{
     height:100px;
 }
 .md-button.md-raised{
+	width:300px;
 	padding:10px;
 	font-size:18px;
 }

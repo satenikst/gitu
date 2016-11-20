@@ -1,0 +1,99 @@
+<div ng-cloak style="padding-top:110px;">
+<h2 style="text-align:center;color:rgba(0,0,0,0.54);">ՓՈՓՈԽՈՒԹՅՈՒՆՆԵՐԻ ՉԵՂԱՐԿՈՒՄ</h2>
+  <md-content>
+    <md-tabs md-dynamic-height>
+      <md-tab label="git checkout">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">git checkout</h1>
+          <p class="content">
+          git checkout հրամանը կատարում է հետևյալ գործողությունները՝
+          </p>
+            <ol class="content">
+              <li>ստուգում է ֆայլերը,</li>
+              <li>ստուգում է commit-ները,</li>
+              <li>ստուգում է ճյուղերը</li>
+            </ol>
+          <p class="content">
+            Այս մոդուլում մենք գործ կունենանք միայն առաջին երկուսի հետ։ Ստուգելով commit-ը ամբողջ աշխատանքային ցուցակը համապատասխանեցվում է այդ commit-ին։ Սա կարող է օգտագործվել քո նախագծի հին վիճակը տեսնելու համար, չփոխելով ընթացիկ վիճակը։ Ֆայլը ստուգելով դու կարող ես տեսնել ֆայլի հին տարբերակը, նույնպես առանց ընթացիկ վիճակի փոփոխության։
+          </p>
+          <div class="quest">կիրառում</div>
+          <div class="usage">
+            git checkout master
+          </div>
+          <p class="content">
+            Սա վերադարձնում է master ճյուղը։
+          </p>
+          <div class="usage">
+            git checkout 'commit' 'file'
+          </div>
+          <p class="content">
+            Սա ստուգում է ֆայլի նախկին տարբերակը։
+          </p>
+          <div class="usage">
+            git checkout 'commit'
+          </div>
+          <p class="content">
+            Սա թարմացնում է աշխատանքային ցուցակի բոլոր ֆայլերը՝ տվյալ commit-ին համապատասխան։
+          </p>
+        </md-content>
+      </md-tab>
+      <md-tab label="git revert">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">git revert</h1>
+          <p class="content">
+          git revert հրամանը ձևափոխում է commit-ները։ Բայց, նախագծի պատմությունից commit-ները ջնջելու փոխարեն չեղարկում է եղած փոփոխությունները և ավելացնում է նոր commit: Սա պաշտպանում է Git-ին պատմության կորստից, որը շատ կարևոր է ձեր նախագծի պատմության ամբողջականության և հուսալի աշխատանքի համար։ 
+          </p>
+          <div class="quest">կիրառում</div>
+          <div class="usage">
+            git revert 'commit'
+          </div>
+          <p class="content">
+           Սա գեներացնում է նոր commit, որը չեղարկում է 'commit'-ում ներկայացված բոլոր փոփոխությունները։
+          </p>
+        </md-content>
+      </md-tab>
+      <md-tab label="git reset">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">git reset</h1>
+          <p class="content">
+            Եթե git revert-ը հուսալի ճանապարհ է փոփոխությունների համար, ապա ես դա չեմ կարող ասել git reset հրամանի մասին։Երբ դու չեղարկում ես git reset-ով, ապա այստեղ չի փոփոխվում օրիգինալի կրկնօրինակը, այլ այն փոփոխվում է մշտապես։ Այս մեթոդը վտանգավոր է և համարվում է Git-ի այն հրամաններից մեկը, որոնք ունակ են կործանելու քո աշխատանքը։
+          </p>
+          <div class="quest">կիրառում</div>
+          <div class="usage">
+            git reset 'file'
+          </div>
+          <p class="content">
+            Սա ջնջում է տվյալ ֆայլը նախագծից, բայց աշխատանքային միջավայրը թողնում է անփոփոխ։
+          </p>
+          <div class="usage">
+            git log -n 'limit'
+          </div>
+          <p class="content">
+            Սահմանափակում է commit-ների քանակը ըստ՝ 'limit'-ի։
+          </p>
+        </md-content>
+      </md-tab>
+      <md-tab label="git clean">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">git clean</h1>
+          <p class="content">
+            git log հրամանը ցուցադրում է տեղի ունեցած բոլոր commit-ները։ Դա քեզ թույլ է տալիս թերթել նախագծի պատմության էջերը, զտել (filter) այն, և փնտրել հատուկ փոփոխություններ։
+          </p>
+          <div class="quest">կիրառում</div>
+          <div class="usage">
+            git log
+          </div>
+          <p class="content">
+            Սրանով ցուցադրվում է գոյություն ունեցող commit-ների պատմությունը։
+          </p>
+          <div class="usage">
+            git log -n 'limit'
+          </div>
+          <p class="content">
+            Սահմանափակում է commit-ների քանակը ըստ՝ 'limit'-ի։
+          </p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>
