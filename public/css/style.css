@@ -56,7 +56,10 @@ footer > md-toolbar:not(.md-menu-toolbar){
 }
 .myName{
 	font-size:12px;
+}
+.myName > span{
 	color:#fff;
+	margin-left:10px;
 }
 @media screen and (max-width: 756px){
 	.md-button.md-raised{
